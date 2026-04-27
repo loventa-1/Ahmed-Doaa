@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
     <title>Ahmed & Doaa - Wedding Invitation</title>
     <link rel="stylesheet" href="main.css" />
@@ -13,59 +13,6 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel+Decorative:wght@400;700&family=IM+Fell+English:ital@0;1&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <style>
-      /* Mini fix for language buttons alignment */
-      .lang-toggle-wrap {
-        position: absolute;
-        z-index: 30;
-      }
-      .door-lang {
-        top: 20px;
-        right: 20px;
-      }
-      .details-lang {
-        top: 20px;
-        right: 20px;
-      }
-      @media (max-width: 600px) {
-        .lang-btn {
-          padding: 6px 12px;
-          font-size: 10px;
-        }
-      }
-      .whatsapp-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
-        margin: 20px 0 10px;
-      }
-      .whatsapp-btn {
-        background: linear-gradient(135deg, #25d366, #128c7e);
-        border: none;
-        padding: 10px 18px;
-        border-radius: 40px;
-        color: white;
-        font-family: var(--font-display, "Cinzel Decorative", serif);
-        font-size: 12px;
-        letter-spacing: 0.05em;
-        cursor: pointer;
-        transition: 0.2s;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      }
-      .whatsapp-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
-      }
-      .copy-btn {
-        background: linear-gradient(135deg, #6c757d, #495057);
-      }
-      .small-note {
-        font-size: 11px;
-        opacity: 0.7;
-        margin-top: 10px;
-      }
-    </style>
   </head>
   <body>
     <!-- PAGE 1 · LOADING SCREEN -->
@@ -143,7 +90,7 @@
           <img id="hero-crest-img" alt="Crest" />
         </div>
         <p class="invite-pre en-text">
-          Together with their families
+          <br /><br /><br />Together with their families
         </p>
         <p class="invite-pre ar-text">بمشاركة عائلتيهما</p>
         <div class="hero-names">
@@ -166,7 +113,7 @@
         <p class="hero-event ar-text">حفل الزفاف</p>
       </div>
 
-      <!-- Event Detail Cards -->
+      <!-- Event Detail Cards (كل معلومة في بطاقة منفصلة) -->
       <div class="details-cards">
         <!-- Date Card -->
         <div class="detail-card" style="--delay: 0.1s">
@@ -266,15 +213,20 @@
           <div class="success-icon">💌</div>
           <p class="en-text">
             Thank you! Your response has been recorded.<br />Please confirm your
-            attendance via WhatsApp to the groom:
+            attendance via WhatsApp to both the groom and the bride:
           </p>
           <p class="ar-text">
-            شكراً لك! تم تسجيل ردك.<br />يرجى تأكيد الحضور عبر واتساب للعريس:
+            شكراً لك! تم تسجيل ردك.<br />يرجى تأكيد الحضور عبر واتساب للعريس
+            والعروس:
           </p>
           <div class="whatsapp-buttons">
             <button id="send-to-groom" class="whatsapp-btn groom-btn">
               <span class="en-text">📱 Send to Groom</span>
               <span class="ar-text">📱 إرسال للعريس</span>
+            </button>
+            <button id="send-to-bride" class="whatsapp-btn bride-btn">
+              <span class="en-text">📱 Send to Bride</span>
+              <span class="ar-text">📱 إرسال للعروس</span>
             </button>
             <button id="copy-message" class="whatsapp-btn copy-btn">
               <span class="en-text">📋 Copy message</span>
@@ -282,10 +234,11 @@
             </button>
           </div>
           <p class="en-text small-note">
-            After sending, you may close this page. Thank you!
+            After sending to one, please return to this page and send to the
+            other.
           </p>
           <p class="ar-text small-note">
-            بعد الإرسال، يمكنك إغلاق الصفحة. شكراً لك!
+            بعد الإرسال لأحدهما، ارجع إلى هذه الصفحة وأرسل للآخر.
           </p>
         </div>
       </div>
